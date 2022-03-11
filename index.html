@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Внешний svg-спрайт</title>
+</head>
+
+<body>
+  <main>
+    <section class="info section">
+      <div class="container info-box">
+        <h2 class="info__header header-second-lvl">Как это работает?</h2>
+        <ul class="info__list list-reset">
+          <li class="info__list-item">
+            <svg class="info__svg-image">
+              <use xlink:href="sprite.svg#coffee"></use>
+            </svg>
+            <h3 class="info__card-header header-third-lvl">Утренний <span class="info__orange-text">кофе</span></h3>
+            <p class="info__descr">Кофеин воздействует на центральную нервную систему как природный “будильник”. Поэтому мы быстрее просыпаемся.</p>
+          </li>
+
+          <li class="info__list-item">
+            <svg class="info__svg-image">
+              <use xlink:href="sprite.svg#meditation"></use>
+            </svg>
+            <h3 class="info__card-header header-third-lvl">Час <span class="info__orange-text">медитации</span></h3>
+            <p class="info__descr">После практик оба полушария мозга начинают работать сбалансированно — это привносит порядок в вашу жизнь.</p>
+          </li>
+
+          <li class="info__list-item">
+            <svg class="info__svg-image">
+              <use xlink:href="sprite.svg#run"></use>
+            </svg>
+            <h3 class="info__card-header header-third-lvl">Вперёд к <span class="info__orange-text">свершениям!</span></h3>
+            <p class="info__descr">Ресурсы каждого человека ограничены, поэтому нам необходимо беречь себя и вовремя останавливаться.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="integration section">
+      <div class="container integration-box">
+        <div class="integration__col i-left-col">
+          <h2 class="integration__header header-second-lvl">Интеграция со сторонними сервисами</h2>
+          <p class="integration__descr">Поможет всегда оставаться в курсе всех событий, быть максимально эффективным на протяжении всего рабочего дня, контролировать свои задачи и не опоздать на запланированные встречи.</p>
+        </div>
+        <div class="integration__col i-right-col">
+          <ul class="integration__list list-reset int-list">
+            <li class="int-list__item">
+              <a href="#" class="int-list__link">
+                <svg class="int__svg-image">
+                  <use xlink:href="sprite.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="int-list__item">
+              <a href="#" class="int-list__link">
+                <svg class="int__svg-image">
+                  <use xlink:href="sprite.svg#trello-plain"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="int-list__item">
+              <a href="#" class="int-list__link">
+                <svg class="int__svg-image">
+                  <use xlink:href="sprite.svg#worklio"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="int-list__item">
+              <a href="#" class="int-list__link">
+                <svg class="int__svg-image">
+                  <use xlink:href="sprite.svg#dropbox"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="int-list__item">
+              <a href="#" class="int-list__link">
+                <svg class="int__svg-image">
+                  <use xlink:href="sprite.svg#google"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="int-list__item">
+              <a href="#" class="int-list__link">
+                <svg class="int__svg-image">
+                  <use xlink:href="sprite.svg#trello"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="int-list__item">
+              <a href="#" class="int-list__link">
+                <svg class="int__svg-image">
+                  <use xlink:href="sprite.svg#slack"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- Панда -->
+    <section class="panda">
+      <div class="panda-box">
+        <svg width="166" height="149">
+          <g id="panda-right-ear">
+            <ellipse rx="25" ry="19" cx="150" cy="8" fill="#4A4A4A" transform="rotate(45, 120, 0)"></ellipse>
+            <ellipse rx="10" ry="8" cx="150" cy="8" fill="#010101" transform="rotate(45, 120, 0)"></ellipse>
+          </g>
+
+          <g id="panda-left-ear">
+            <ellipse rx="25" ry="19" cx="3" cy="40" fill="#4A4A4A" transform="rotate(-45, 0, 0)"></ellipse>
+            <ellipse rx="10" ry="8" cx="3" cy="40" fill="#010101" transform="rotate(-45, 0, 0)"></ellipse>
+          </g>
+
+          <g id="panda-head">
+            <circle r="70" cx="83" cy="75" fill="white"></circle>
+            <ellipse rx="10" ry="8" cx="84" cy="97" fill="#010101"></ellipse>
+          </g>
+
+          <g id="panda-right-eye">
+            <ellipse rx="15" ry="19" cx="117" cy="78" fill="#4A4A4A"></ellipse>
+            <circle r="7" cx="117" cy="75" fill="#010101"></circle>
+            <circle r="3" cx="115" cy="72" fill="#ffffff"></circle>
+          </g>
+          <g id="panda-left-eye">
+            <ellipse rx="15" ry="19" cx="51" cy="78" fill="#4A4A4A"></ellipse>
+            <circle r="7" cx="51" cy="75" fill="#010101"></circle>
+            <circle r="3" cx="49" cy="72" fill="#ffffff"></circle>
+          </g>
+        </svg>
+      </div>
+    </section>
+  </main>
+
+</body>
+</html>
